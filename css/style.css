@@ -6,7 +6,7 @@ body, html {
 .title {
 	text-align: center;
 	height: 20em;
-	background-color: #95a5a6;
+	background-color: #1F2324;
 	color: white;
 }
 
@@ -16,7 +16,7 @@ ul {
 }
 
 .item .jumbotron {
-	background-color: #2980b9;
+	background-color: #33373A;
 	color: #ecf0f1;;
 	padding: 6em;
 }
@@ -27,4 +27,8 @@ ul {
 
 .inter-img {
 	width: 100%
+}
+
+.plx-img {
+	height: 10em;
 }
