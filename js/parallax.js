@@ -12,4 +12,4 @@ $(window).ready(function()
 	{
 		console.log("stuff to be done here");
 	}
-})
+});
