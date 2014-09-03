@@ -4,12 +4,18 @@ $(window).ready(function()
 	{
 	    refresh();
 	});
+
 	$(window).bind('scroll', function()
 	{
 	    refresh();
 	});
+
 	function refresh() 
 	{
-		console.log("stuff to be done here");
+		var sTop = $(window).scrollTop();
+		$.each($(".plx-img"), function() 
+		{
+			$(this).css("background-position-y", (sTop-$(this).position().top)*0.1);
+		});
 	}
 });
