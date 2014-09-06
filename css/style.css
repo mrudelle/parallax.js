@@ -34,7 +34,7 @@ ul {
 }
 
 .plx-float {
-	position: absolute;
+	position: fixed;
 }
 
 .bubble {
