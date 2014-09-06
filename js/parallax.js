@@ -23,9 +23,9 @@ $(window).ready(function()
 
 		$.each($(".plx-float"), function(){
 			var ref = $($(this).attr('plx-ref'));
-			console.log(ref);
-			console.log((wHeight/2 + Math.pow( (sTop + wHeight/2 - ref.position().top - ref.height()/2)/(wHeight/2) , 2 ) * (wHeight/2) ));
-			$(this).css("top", (wHeight/2 + Math.pow( (sTop + wHeight/2 - ref.position().top - ref.height()/2)/(wHeight/2) , 2 ) * (wHeight/2) ) + "px");
+			var relativePos = (sTop + wHeight/2 - ref.position().top - ref.height()/2)/(wHeight/2);
+			console.log(relativePos);
+			$(this).css("top", ( ( Math.pow( relativePos , 2 ) + 1 ) * (wHeight/2) ) + "px");
 		});
 	}
 });
