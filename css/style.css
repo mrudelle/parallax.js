@@ -32,3 +32,14 @@ ul {
 .plx-img {
 	height: 10em;
 }
+
+.plx-float {
+	position: absolute;
+}
+
+.bubble {
+	line-height: 2em;
+	border-radius: 1em;
+	background-color: white;
+	color: #1F2324;
+}
