@@ -22,10 +22,13 @@ $(window).ready(function()
 		});
 
 		$.each($(".plx-float"), function(){
+
 			var ref = $($(this).attr('plx-ref'));
+
 			var relativePos = (sTop + wHeight/2 - ref.position().top - ref.height()/2)/(wHeight/2);
-			console.log(relativePos);
-			$(this).css("top", ( ( Math.pow( relativePos , 2 ) + 1 ) * (wHeight/2) ) + "px");
+
+			$(this).css("top", ( ( relativePos * Math.abs(relativePos) + 1 ) * (wHeight/2) ) + "px");
+			
 		});
 	}
 });
