@@ -27,8 +27,12 @@ $(window).ready(function()
 
 			var relativePos = (sTop + wHeight/2 - ref.position().top - ref.height()/2)/(wHeight/2);
 
-			$(this).css("top", ( ( relativePos * Math.abs(relativePos) + 1 ) * (wHeight/2) ) + "px");
-			
+			$(this).css("top", ( ( - relativePos * Math.abs(relativePos) - relativePos + 1 ) * (wHeight/2) ) + "px");
+
+			// $(this).css("top", ( ( - Math.pow(relativePos,3) + 1 ) * (wHeight/2) ) + "px");
+
+			// $(this).css("top", ( ( - Math.sin(relativePos * Math.PI) + 1 ) * (wHeight/2) ) + "px");
+
 		});
 	}
 });
