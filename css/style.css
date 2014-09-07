@@ -18,7 +18,7 @@ ul {
 .item .jumbotron {
 	background-color: #33373A;
 	color: #ecf0f1;;
-	padding: 6em;
+	padding: 8em;
 }
 
 .jumbotron {
@@ -38,11 +38,11 @@ ul {
 }
 
 .bubble {
-	line-height: 2em;
-	border-radius: 2em;
+	line-height: 3em;
+	border-radius: 3em;
 	background-color: white;
-	color: #1F2324;
-	padding: 1em;
+	color: white;
+	padding: 1.5em;
 	margin: 1em;
 	box-shadow: 0 0 0.5em #888;
 	background-color: #2ecc71;
