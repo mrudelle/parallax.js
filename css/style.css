@@ -8,6 +8,21 @@ body, html {
 	height: 20em;
 	background-color: #1F2324;
 	color: white;
+	height: 100vh;
+	width: 100%;
+	display: table;
+}
+
+.title h1 {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.scroll-down {
+	padding: 0.5em;
+	margin: 1em;
+	background-color: #888;
+	border-radius: 5em;
 }
 
 ul {
