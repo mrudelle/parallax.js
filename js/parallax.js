@@ -1,3 +1,9 @@
+/*! parallax.js - v1.0.5 - 2013-04-07
+ * http://mrudelle.github.com/parallax-scroll
+ *
+ * Copyright (c) 2014 Matthieu Rudelle <matthieu.rudelle@gmail.com>;
+ * Licensed under the MIT license */
+
 $(window).ready(function()
 {
 	$(window).resize(function()
