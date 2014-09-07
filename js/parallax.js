@@ -42,5 +42,11 @@ $(window).ready(function()
 				});
 
 		});
+
+		$.each($(".plx-curtain"), function(){
+
+			$(this).css("top", (sTop > 0 ? -$(this).outerHeight() : 0) + "px");
+
+		})
 	}
 });
