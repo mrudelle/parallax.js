@@ -33,7 +33,7 @@ ul {
 .item .jumbotron {
 	background-color: #33373A;
 	color: #ecf0f1;;
-	padding: 6em;
+	padding: 8em;
 }
 
 .jumbotron {
@@ -45,5 +45,20 @@ ul {
 }
 
 .plx-img {
-	height: 10em;
+	height: 25em;
+}
+
+.plx-float {
+	position: fixed;
+}
+
+.bubble {
+	line-height: 3em;
+	border-radius: 3em;
+	background-color: white;
+	color: white;
+	padding: 1.5em;
+	margin: 1em;
+	box-shadow: 0 0 0.5em #888;
+	background-color: #2ecc71;
 }
