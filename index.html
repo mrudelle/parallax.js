@@ -8,79 +8,78 @@
 
 	</head>
 	<body>
-		<div class="title jumbotron plx-curtain">
-			<h1>
-				Scroll Down <br>
-				<span class="scroll-down glyphicon glyphicon-chevron-down"></span>
-			</h1>
+		<div class="title-curtain show jumbotron plx-curtain">
+			<div class="title">
+				<h1>
+					Scroll Down <br>
+					<span class="scroll-down glyphicon glyphicon-chevron-down"></span>
+				</h1>
+			</div>
+			<div class="title-captions">
+				This pane will fade away when you start scrolling
+			</div>
 		</div>
 		<ul>
 			<li class="item">
-				<div class="jumbotron">
-					<br><br><br><br><br>
+				<div class="curtain-text show jumbotron plx-img" style="background-image: url('img/waterfall.jpg')" plx-speed="0.3">
 					<h2 id="item-1">
-						Lorem ipsum dolor sit amet
+						A good start for your show: The CURTAIN
 					</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						The pane you just saw fading to the top is a <strong>Curtain</strong>. It fades upward when you start scrolling and will come back if you go to the top of the page. To call it from your code, just add <code>class="plx-curtain"</code> to your div.
 					</p>
 				</div>
-				<div class="plx-img" style="background-image: url('img/github.png')" plx-speed="0.1"></div>
 			</li>
 			<li class="item">
-				<div class="jumbotron">
-					<h2 id="item-2">
-						Lorem ipsum dolor sit amet
+				<div class="show jumbotron floating-elements">
+					<h2>
+						Floating div
 					</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					<p id="float1">
+						Sometimes it's useful to make an information slightly appear when a particular element is close to the middle of the screen. Here comes the floating element. Just add <code>class="plx-float"</code> to your div and select the target element: <code>plx-ref="#item-2"</code>. 
+					</p>
+					<br><br>
+					<p id="float2">
+						Plus you can chose to make the floating element fade when it goes away by adding: <code>plx-fade="true"</code>. like this bubble on the right hand side.
+					</p>
+					<br><br>
+					<p id="float3">
+						When specifiying the target you can put any correct element selector, for instance <code>#part-2</code>, <code>input:focus</code> or even <code>.class[attr$="value"]</code>
 					</p>
 				</div>
-				<div class="plx-img" style="background-image: url('img/github.png')" plx-speed="0.2"></div>
+				<div class="bubble plx-float" plx-ref="#float1" plx-fade="true">FLOAT</div>
+				<div class="bubble plx-float" plx-ref="#float2" plx-fade="true">FLOAT</div>
+				<div class="bubble plx-float" plx-ref="#float3" plx-fade="true">FLOAT</div>
 			</li>
 			<li class="item">
-				<div class="jumbotron">
+				<div class="show jumbotron plx-img" style="background-image: url('img/iceland.jpg'); background-size: 100%" plx-speed="0.3">
 					<h2  id="item-3">
-						TARGET : Lorem ipsum dolor sit amet
+						Parallax Images
 					</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Finally, The most interesting bit!
+						<br>
+						Thanks to the class <code>class="plx-img"</code>
+						<br>
+						Just define the speed: <code>plx-speed="0.3"</code>
+						<br>
+						And you have a parallax background image!
+						<br>
+						Don't forget the background image:
+						<br>
+						<code>style="background-image: url('img/iceland.jpg')"</code>
+						<br>
+						And you're done!
+						<br>
+						You can set offset (<code>plx-offset="-100"</code>) in px
+						<br>
+						And parallax.js will match the top of the image (plus offset)
+						<br>
+						to the top of your div, when it reaches the top!
+
 					</p>
 				</div>
-				<div class="plx-img" style="background-image: url('img/github.png')" plx-speed="0.3"></div>
-			</li>
-			<li class="item">
-				<div class="jumbotron">
-					<h2 id="item-4">
-						Lorem ipsum dolor sit amet
-					</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
-				<div class="plx-img" style="background-image: url('img/github.png')" plx-speed="0.5"></div>
-			</li>
-			<li class="item">
-				<div class="jumbotron">
-					<h2 id="item-5">
-						Lorem ipsum dolor sit amet
-					</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
-				<div class="plx-img" style="background-image: url('img/github.png')" plx-speed="0.6"></div>
-			</li>
-			<li class="item">
-				<div class="jumbotron">
-					<h2 id="item-6">
-						Lorem ipsum dolor sit amet
-					</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
-				<div class="plx-img" style="background-image: url('img/github.png')" plx-speed="0.8"></div>
 			</li>
 			<li class="item">
 				<div class="jumbotron">
@@ -94,13 +93,6 @@
 				<div class="plx-img" style="background-image: url('img/github.png')" plx-speed="1"></div>
 			</li>
 		</ul>
-		<div class="bubble plx-float" plx-ref="#item-1">NEW1</div>
-		<div class="bubble plx-float" plx-ref="#item-2" plx-fade="true">NEW2</div>
-		<div class="bubble plx-float" plx-ref="#item-3">NEW3</div>
-		<div class="bubble plx-float" plx-ref="#item-4" plx-fade="true">NEW4</div>
-		<div class="bubble plx-float" plx-ref="#item-5">NEW5</div>
-		<div class="bubble plx-float" plx-ref="#item-6" plx-fade="true">NEW6</div>
-		<div class="bubble plx-float" plx-ref="#item-7">NEW7</div>
 
 		<!-- scripts -->
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
