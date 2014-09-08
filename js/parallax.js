@@ -37,7 +37,7 @@ $(window).ready(function()
 
 			$(this).css(
 				{
-					"top": ( ( - Math.pow(relativePos, 3) - relativePos + 1 ) * (wHeight/2) - $(this).height() / 2) + "px",
+					"top": ( ( - Math.pow(relativePos, 3) - relativePos + 1 ) * (wHeight/2) - $(this).outerHeight() / 2) + "px",
 					"opacity": $(this).attr('plx-fade') ? ( 1 - Math.pow(relativePos * 1.5, 2)) : 1
 				});
 
