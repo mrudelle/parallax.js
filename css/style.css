@@ -80,16 +80,6 @@ ul {
 	width: 100%
 }
 
-.plx-float {
-	position: fixed;
-}
-
-.plx-curtain {
-	position: absolute;
-	transition: all 0.5s ease-in-out;
-	z-index: 5;
-}
-
 .bubble {
 	line-height: 3em;
 	border-radius: 3em;
